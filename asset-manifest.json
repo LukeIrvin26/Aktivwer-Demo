@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/aktivwer-demo.io/static/css/main.5561c1e2.chunk.css",
+    "main.js": "/aktivwer-demo.io/static/js/main.d5b6c578.chunk.js",
+    "main.js.map": "/aktivwer-demo.io/static/js/main.d5b6c578.chunk.js.map",
+    "runtime-main.js": "/aktivwer-demo.io/static/js/runtime-main.e6e16402.js",
+    "runtime-main.js.map": "/aktivwer-demo.io/static/js/runtime-main.e6e16402.js.map",
+    "static/js/2.b70356cb.chunk.js": "/aktivwer-demo.io/static/js/2.b70356cb.chunk.js",
+    "static/js/2.b70356cb.chunk.js.map": "/aktivwer-demo.io/static/js/2.b70356cb.chunk.js.map",
+    "static/js/3.f68f4d52.chunk.js": "/aktivwer-demo.io/static/js/3.f68f4d52.chunk.js",
+    "static/js/3.f68f4d52.chunk.js.map": "/aktivwer-demo.io/static/js/3.f68f4d52.chunk.js.map",
+    "index.html": "/aktivwer-demo.io/index.html",
+    "static/css/main.5561c1e2.chunk.css.map": "/aktivwer-demo.io/static/css/main.5561c1e2.chunk.css.map",
+    "static/js/2.b70356cb.chunk.js.LICENSE.txt": "/aktivwer-demo.io/static/js/2.b70356cb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6e16402.js",
+    "static/js/2.b70356cb.chunk.js",
+    "static/css/main.5561c1e2.chunk.css",
+    "static/js/main.d5b6c578.chunk.js"
+  ]
+}
