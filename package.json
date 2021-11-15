@@ -1,6 +1,7 @@
 {
   "name": "acktivwear",
   "version": "0.1.0",
+  "homepage": "https://LukeIrvin26.github.io/aktivwer-demo.io",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
@@ -11,6 +12,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "framer-motion": "^4",
+    "gh-pages": "^3.2.3",
     "process": "^0.11.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
