@@ -4,7 +4,7 @@ import { Box, Flex, Button, Text, Image, Heading } from '@chakra-ui/react';
 const imageWithText = ({ button, reverse, image, heading, text }) => {
   const reverseSection = reverse ? 'row-reverse' : 'row';
   return (
-    <Box backgroundColor="#DEC1FF" h="40vh" py="2">
+    <Box backgroundColor="#DEC1FF" h='50em' py="2">
       <Flex flexDir={['column', reverseSection]} w="100%" h="100%">
         <Image src={image} objectFit="contain" w={['100%', '50%']} />
         <Box

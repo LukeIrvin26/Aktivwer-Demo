@@ -1,7 +1,7 @@
 {
   "name": "acktivwear",
   "version": "0.1.0",
-  "homepage": "https://LukeIrvin26.github.io/aktivwer-demo.io",
+  "homepage": "https://LukeIrvin26.github.io/aktivwer-demo/",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",

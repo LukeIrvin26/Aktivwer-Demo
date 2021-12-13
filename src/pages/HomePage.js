@@ -7,12 +7,14 @@ import ImageWithText from '../components/imageWithText';
 import RichText from '../components/RichText';
 
 const HomePage = () => {
-  const { fetchAllProducts, products } = useContext(ShopContext);
+  const { categories, fetchProductCategories } = useContext(ShopContext);
   useEffect(() => {
-    fetchAllProducts();
-  }, [fetchAllProducts]);
+    fetchProductCategories();
+  }, [fetchProductCategories]);
 
-  if (!products) return <div>Loading...</div>;
+  if (!categories) return <div>Loading...</div>;
+
+  console.log(categories);
 
   return (
     <Box>
@@ -39,28 +41,27 @@ const HomePage = () => {
         templateColumns={['repeat(1fr)', 'repeat(3, 1fr)']}
         backgroundColor="#93867F"
       >
-        {products.map((product) => (
-          <Link to={`/products/${product.handle}`} key={product.id}>
+        {categories.map((category) => (
+          <Link to={`/categories/${category.id}`} key={category.id}>
             <Box
               _hover={{ opacity: '80%' }}
               textAlign="center"
               position="relative"
-              py="2"
+              pt="5"
             >
               <Center>
                 <Image
                   h={500}
                   w={500}
-                  src={product.images[0].src}
+                  src={category.products[0].images[0].src}
                   fit="cover"
                 />
               </Center>
             </Box>
-            <Box textAlign="center">
+            <Box textAlign="center" pt="2" pb="5">
               <Text fontSize="20" fontWeight="bold">
-                {product.title}
+                {category.title}
               </Text>
-              <Text>${product.variants[0].price}</Text>
             </Box>
           </Link>
         ))}

@@ -10,7 +10,7 @@ const Footer = () => {
         color="black"
         fontWeight="bold"
       >
-        <Image src={process.env.PUBLIC_URL + '/logo192.png'} />
+        <Image src={process.env.PUBLIC_URL + '/logo192.png'} ml={[135, 10]} />
         <VStack p="2rem">
           <Link to="/">The Green Blast</Link>
           <Link to="/">The Blue Berry</Link>

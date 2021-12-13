@@ -1,9 +1,10 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Cart from './components/Cart';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import NavMenu from './components/NavMenu';
 import ScrollToTop from './hooks/ScrollToTop';
+import CategoryPage from './pages/CategoryPage';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 
@@ -18,6 +19,9 @@ function App() {
         <Switch>
           <Route path="/products/:handle">
             <ProductPage />
+          </Route>
+          <Route path="/categories/:id">
+            <CategoryPage />
           </Route>
           <Route path="/">
             <HomePage />
